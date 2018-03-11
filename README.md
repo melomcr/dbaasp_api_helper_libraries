@@ -5,7 +5,7 @@
 
 ## Examples
 
-####   lookup 
+####   1.lookup 
 
 | Parameter | Description |
 | --- | --- |
@@ -20,7 +20,7 @@ String response = lookupRequest.request() ;
 
 ```
 
-### Example - peptide_card 
+## 2.peptide_card 
 
 ```
 PeptideCardRequest peptideCardRequest = new PeptideCardRequest();
@@ -42,7 +42,7 @@ String response = searchRequest.request();
 
 ```
 
-### Example - ranking_search 
+## 3.ranking_search 
 
 ```
 RankingSearchRequest rankingSearchRequest = new RankingSearchRequest(); 
