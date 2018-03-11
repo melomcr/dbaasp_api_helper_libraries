@@ -44,4 +44,15 @@ String response = searchRequest.request();
 
 ```
 
+### Example - ranking_search 
+
+```
+RankingSearchRequest rankingSearchRequest = new RankingSearchRequest(); 
+rankingSearchRequest.setTargetSpeciesId(3232); 
+rankingSearchRequest.setActivityMeasureId(72); 
+rankingSearchRequest.setActivity(100f); 
+rankingSearchRequest.setFormatType(FormatType.XML);
+String response = rankingSearchRequest.request();
+
+```
 
