@@ -3,11 +3,6 @@
 
 
 
-## Prerequisites
-
-* Minimum Java 8
-* Java IDE
-
 ## Examples
 
 ####   lookup 
