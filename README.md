@@ -22,3 +22,26 @@ String response = lookupRequest.request() ;
 
 ```
 
+### Example - peptide_card 
+
+```
+PeptideCardRequest peptideCardRequest = new PeptideCardRequest();
+peptideCardRequest.setPeptideId(8);
+peptideCardRequest.setFormatType(FormatType.XML);
+String response = peptideCardRequest.request() ;
+
+```
+
+
+### Example - search 
+
+```
+SearchRequest searchRequest = new SearchRequest();
+searchRequest.setSynthesisType(36);
+searchRequest.setTargetGroupId(790);
+searchRequest.setFormatType(FormatType.XML);
+String response = searchRequest.request();
+
+```
+
+
