@@ -71,6 +71,16 @@ String response = searchRequest.request();
 
 #### 4.ranking_search 
 
+| Parameter | Description |
+| --- | --- |
+| complexity | Type of Peptide. Available values : mononer(default) |
+| target_species_id | Identifier of target species |
+| activity_measure_id | Identifier of activity measure |
+| medium_id | Identifier of Medium |
+| cfu | CFU |
+| operation | compare operation, available operation : >, < , >= , <= , = |
+| format | xml,json,fasta |
+
 ```
 RankingSearchRequest rankingSearchRequest = new RankingSearchRequest(); 
 rankingSearchRequest.setTargetSpeciesId(3232); 
