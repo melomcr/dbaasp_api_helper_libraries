@@ -22,6 +22,12 @@ String response = lookupRequest.request() ;
 
 #### 2.peptide_card 
 
+| Parameter | Description |
+| --- | --- |
+| peptide_id | peptide card id |
+| format | xml,json,fasta |
+
+
 ```
 PeptideCardRequest peptideCardRequest = new PeptideCardRequest();
 peptideCardRequest.setPeptideId(8);
@@ -32,6 +38,27 @@ String response = peptideCardRequest.request() ;
 
 
 #### 3.search 
+
+| Parameter | Description |
+| --- | --- |
+| complexity | Type of Peptide. Available values : monomer (default), dimer, multi_peptide |
+| name | Name of peptide |
+| sequence | Sequence of peptide |
+| target_group_id | Identifier of target group |
+| target_object_id | Identifier of target object |
+| n_terminus_id | Identifier of N Terminus |
+| c_terminus_id | Identifier of C Terminus |
+| synthesis_type | Identifier of Synthesys Type |
+| kingdom_id | Identifier of Kingdom |
+| bond_id | Identifier of Bond |
+| unusual_amino_acid_id | Identifier of modification type |
+| author_id | Identifier of Author |
+| journal_id | Identifier of Journal |
+| article_year | Year of publication of Article |
+| article_title | Title of Article |
+| target_species_id | Identifier of target species |
+| format | xml,json,fasta |
+
 
 ```
 SearchRequest searchRequest = new SearchRequest();
