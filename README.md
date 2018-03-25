@@ -3,8 +3,8 @@
 
 #### Please see libraries for following Programing languages
 
-* [Java](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-JAVA.md) - For Java Developers
-* [Phyton](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-JAVA.md) - For Phyton Developers
-* [Ruby](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-RUBY.md) - For Ruby Developers
+* [Java](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-JAVA.md)
+* [Phyton](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-JAVA.md)
+* [Ruby](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-RUBY.md)
 
 
