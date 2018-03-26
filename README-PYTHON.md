@@ -37,6 +37,8 @@ print (peptideCardRequest.request())
 
 #### 3.search 
 
+| Parameter | Description |
+| --- | --- |
 | complexity | Type of Peptide. Available values : monomer (default), dimer, multi_peptide |
 | name | Name of peptide |
 | sequence | Sequence of peptide |
