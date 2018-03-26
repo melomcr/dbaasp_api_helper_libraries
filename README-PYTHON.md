@@ -37,11 +37,11 @@ print (peptideCardRequest.request())
 
 #### 3.search 
 
-| Parameter | Description |
-| --- | --- |
 | complexity | Type of Peptide. Available values : monomer (default), dimer, multi_peptide |
 | name | Name of peptide |
 | sequence | Sequence of peptide |
+| sequence_option | Available types : part, full |
+| sequence_length | Length of sequence |
 | target_group_id | Identifier of target group |
 | target_object_id | Identifier of target object |
 | n_terminus_id | Identifier of N Terminus |
@@ -55,6 +55,9 @@ print (peptideCardRequest.request())
 | article_year | Year of publication of Article |
 | article_title | Title of Article |
 | target_species_id | Identifier of target species |
+| nonstandard_experimental_conditions |  |
+| hemolytic_and_cytotoxic_activities |  |
+
 | format | xml,json,fasta |
 
 
@@ -71,6 +74,13 @@ print (searchRequest.request())
 | Parameter | Description |
 | --- | --- |
 | complexity | Type of Peptide. Available values : mononer(default) |
+| sequence_length | Length of sequence |
+| n_terminus_id | Identifier of N Terminus |
+| c_terminus_id | Identifier of C Terminus |
+| bond_id | Identifier of Bond |
+| unusual_amino_acid_id | Identifier of modification type |
+| synthesis_type | Identifier of Synthesys Type |
+| kingdom_id | Identifier of Kingdom |
 | target_species_id | Identifier of target species |
 | activity_measure_id | Identifier of activity measure |
 | medium_id | Identifier of Medium |
