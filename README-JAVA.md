@@ -44,6 +44,8 @@ String response = peptideCardRequest.request() ;
 | complexity | Type of Peptide. Available values : monomer (default), dimer, multi_peptide |
 | name | Name of peptide |
 | sequence | Sequence of peptide |
+| sequence_option | Available types : part, full |
+| sequence_length | Length of sequence |
 | target_group_id | Identifier of target group |
 | target_object_id | Identifier of target object |
 | n_terminus_id | Identifier of N Terminus |
@@ -57,6 +59,9 @@ String response = peptideCardRequest.request() ;
 | article_year | Year of publication of Article |
 | article_title | Title of Article |
 | target_species_id | Identifier of target species |
+| nonstandard_experimental_conditions |  |
+| hemolytic_and_cytotoxic_activities |  |
+
 | format | xml,json,fasta |
 
 
