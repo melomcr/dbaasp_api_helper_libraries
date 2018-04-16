@@ -19,11 +19,29 @@
 | format | xml,json,tab |
 
 
-GET
+*GET*
 ```
 https://dbaasp.org/api/v1?query=lookup&lookup_type=target_group&format=xml
 ```
-CURL 
+*CURL* 
 ```
 Curl -  url -v -L -d "query=lookup&lookup_type=target_group&format=json" https://dbaasp.org/api/v1
+```
+
+
+####  1.peptide_card 
+
+| Parameter | Description |
+| --- | --- |
+| peptide_id | peptide card id |
+| format | xml,json,fasta |
+
+
+*GET*
+```
+https://dbaasp.org/api/v1?query=peptide_card&peptide_id=107&format=json
+```
+*CURL* 
+```
+curl -v -L -d "query=peptide_card&peptide_id=107&format=json" https://dbaasp.org/api/v1
 ```
