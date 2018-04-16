@@ -8,7 +8,7 @@
 * [Ruby](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-RUBY.md)
 
 
-#### In case you are not programmer, please see CURL and GET examples below
+#### In case you are not programmer, please see *CURL* and *GET* examples bellow
 
 
 ####  1.lookup 
