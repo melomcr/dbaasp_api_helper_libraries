@@ -73,7 +73,6 @@ curl -v -L -d "query=peptide_card&peptide_id=107&format=json" https://dbaasp.org
 | target_species_id | Identifier of target species |
 | nonstandard_experimental_conditions |  |
 | hemolytic_and_cytotoxic_activities |  |
-
 | format | xml,json,fasta |
 
 
