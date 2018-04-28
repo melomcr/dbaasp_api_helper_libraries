@@ -1,8 +1,9 @@
+ require "./request/AbstractRequest.rb"
+ require './request/LookupRequest.rb' 
 
-
-#  lookupRequest = LookupRequest.new
+ lookupRequest = LookupRequest.new
 #  lookupRequest.lookupType = "medium";
-#  print (lookupRequest.request())
+ puts lookupRequest.request()
 
 
 # peptideCardRequest = PeptideCardRequest.new

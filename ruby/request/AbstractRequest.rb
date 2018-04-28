@@ -1,3 +1,5 @@
+require 'net/https'
+
 class AbstractRequest
 
     base_url = "https://dbaasp.org/api/v1"
@@ -10,21 +12,28 @@ class AbstractRequest
     def get_parameters
         return "none"
     end
+
     
     def request
-        request_parameters = {};
-        request_parameters["query"] = self.query_type()
-        request_parameters["format"] = self.format
-
+    	#TODO
+        request_parameters = { "query" => "lookup", "format" => "json" }
+		
         # adding custom parameters for specific request
         parameters = self.get_parameters();
-        for name in parameters:
-            request_parameters[name]= parameters[name]
-
-        url_values = urllib.urlencode(request_parameters)
-        url = "https://dbaasp.org/api/v1";
-
-        contents = urllib.urlopen(url + "?" + url_values).read();
-        return contents;
+        
+        parameters.each do |key, value|
+          request_parameters.store(key, value);
+        end
+    
+        uri = URI("https://dbaasp.org/api/v1"+ "?" + URI.encode_www_form(request_parameters))
+        response = Net::HTTP.start(
+        						uri.host, 
+        						uri.port, 
+        						:use_ssl => uri.scheme == 'https',
+                				:verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+           request = Net::HTTP::Get.new uri.request_uri
+           http.request request # Net::HTTPResponse object
+        end
+        return response.body
     end
 end
