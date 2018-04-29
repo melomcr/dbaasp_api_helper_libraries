@@ -16,7 +16,6 @@
 lookupRequest = LookupRequest()
 lookupRequest.lookupType = LookupType.MEDIUM;
 print (lookupRequest.request())
-
 ```
 
 #### 2.peptide_card 
@@ -32,7 +31,6 @@ peptideCardRequest = PeptideCardRequest()
 peptideCardRequest.peptide_id = 8;
 peptideCardRequest.format = FormatType.JSON;
 print (peptideCardRequest.request())
-
 ```
 
 
@@ -68,7 +66,6 @@ searchRequest = SearchRequest()
 searchRequest.name = "a"
 searchRequest.format = FormatType.JSON;
 print (searchRequest.request())
-
 ```
 
 #### 4.ranking_search 
@@ -98,6 +95,5 @@ rankingSearchRequest.activity = 100;
 rankingSearchRequest.operation = MathOperationTypes.GREATER;
 rankingSearchRequest.format = FormatType.JSON;
 print (rankingSearchRequest.request())
-
 ```
 
