@@ -17,7 +17,6 @@ LookupRequest lookupRequest = new LookupRequest();
 lookupRequest.setLookupType(LookupType.C_TERMINUS); 
 lookupRequest.setFormatType(FormatType.XML);
 String response = lookupRequest.request() ;
-
 ```
 
 #### 2.peptide_card 
@@ -33,7 +32,6 @@ PeptideCardRequest peptideCardRequest = new PeptideCardRequest();
 peptideCardRequest.setPeptideId(8);
 peptideCardRequest.setFormatType(FormatType.XML);
 String response = peptideCardRequest.request() ;
-
 ```
 
 
@@ -61,7 +59,6 @@ String response = peptideCardRequest.request() ;
 | target_species_id | Identifier of target species |
 | nonstandard_experimental_conditions |  |
 | hemolytic_and_cytotoxic_activities |  |
-
 | format | xml,json,fasta |
 
 
@@ -71,7 +68,6 @@ searchRequest.setSynthesisType(36);
 searchRequest.setTargetGroupId(790);
 searchRequest.setFormatType(FormatType.XML);
 String response = searchRequest.request();
-
 ```
 
 #### 4.ranking_search 
@@ -100,6 +96,5 @@ rankingSearchRequest.setActivityMeasureId(72);
 rankingSearchRequest.setActivity(100f); 
 rankingSearchRequest.setFormatType(FormatType.XML);
 String response = rankingSearchRequest.request();
-
 ```
 
