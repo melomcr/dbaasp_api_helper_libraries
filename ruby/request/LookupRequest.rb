@@ -1,14 +1,18 @@
 class LookupRequest  < AbstractRequest
 
-    lookupType = "n_terminus"
+    attr_accessor :lookupType
 
+    def initialize()
+       super();
+       @lookupType = "n_terminus"
+    end
+    
 	def query_type
         return "lookup"
     end
 
     def get_parameters
-    ##TODO
-       dictionary = { "lookup_type" => "n_terminus"}
+       dictionary = { "lookup_type" => self.lookupType}
        return dictionary
     end
     

@@ -1,7 +1,12 @@
 class PeptideCardRequest  < AbstractRequest
 
-    peptide_id = 1;
+    attr_accessor :peptide_id
 
+    def initialize()
+       super();
+       @peptide_id = 1
+    end
+    
 	def query_type
         return "peptide_card";
     end

@@ -2,8 +2,11 @@ require 'net/https'
 
 class AbstractRequest
 
-    base_url = "https://dbaasp.org/api/v1"
-    format = "json"
+	attr_accessor :format
+	
+	def initialize()
+       @format = "json"
+    end
 
     def query_type
         return "none"
@@ -15,8 +18,8 @@ class AbstractRequest
 
     
     def request
-    	#TODO
-        request_parameters = { "query" => "lookup", "format" => "json" }
+
+        request_parameters = { "query" => self.query_type, "format" => self.format }
 		
         # adding custom parameters for specific request
         parameters = self.get_parameters();
@@ -24,6 +27,8 @@ class AbstractRequest
         parameters.each do |key, value|
           request_parameters.store(key, value);
         end
+        
+        p request_parameters;
     
         uri = URI("https://dbaasp.org/api/v1"+ "?" + URI.encode_www_form(request_parameters))
         response = Net::HTTP.start(

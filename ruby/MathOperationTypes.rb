@@ -1,4 +1,4 @@
-module MathOperationTypes:
+module MathOperationTypes
     EQUALS = "="
     GREATER = ">"
     LESS = "<"
