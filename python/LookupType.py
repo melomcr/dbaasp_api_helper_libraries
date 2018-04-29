@@ -16,5 +16,3 @@ class LookupType:
     TARGET_ACTIVITY = "target_species"
     TARGET_CELL = "mammalian_cell"
     MEDIUM = "medium";
-
-    print LookupType.TARGET_OBJECT;
