@@ -13,11 +13,10 @@
 | format | xml,json,tab |
 
 ```
- lookupRequest = LookupRequest.new
- lookupRequest.lookupType = LookupType::KINGDOM;
- lookupRequest.format = FormatType::XML;
- p lookupRequest.request()
-
+lookupRequest = LookupRequest.new
+lookupRequest.lookupType = LookupType::KINGDOM;
+lookupRequest.format = FormatType::XML;
+p lookupRequest.request()
 ```
 
 #### 2.peptide_card 
@@ -29,11 +28,10 @@
 
 
 ```
- peptideCardRequest = PeptideCardRequest.new
- peptideCardRequest.peptide_id = 1
- peptideCardRequest.format = FormatType::XML;
- p (peptideCardRequest.request())
-
+peptideCardRequest = PeptideCardRequest.new
+peptideCardRequest.peptide_id = 1
+peptideCardRequest.format = FormatType::XML;
+p (peptideCardRequest.request())
 ```
 
 
@@ -65,11 +63,10 @@
 
 
 ```
- searchRequest = SearchRequest.new
- searchRequest.name = "a"
- searchRequest.format = FormatType::JSON;
- p (searchRequest.request())
-
+searchRequest = SearchRequest.new
+searchRequest.name = "a"
+searchRequest.format = FormatType::JSON;
+p (searchRequest.request())
 ```
 
 #### 4.ranking_search 
@@ -92,13 +89,12 @@
 | format | xml,json,fasta |
 
 ```
- rankingSearchRequest = RankingSearchRequest.new
- rankingSearchRequest.target_species_id = 3232
- rankingSearchRequest.activity_measure_id = 72
- rankingSearchRequest.activity = 100;
- rankingSearchRequest.operation = MathOperationTypes::GREATER;
- rankingSearchRequest.format = FormatType::FASTA;
- p (rankingSearchRequest.request())
-
+rankingSearchRequest = RankingSearchRequest.new
+rankingSearchRequest.target_species_id = 3232
+rankingSearchRequest.activity_measure_id = 72
+rankingSearchRequest.activity = 100;
+rankingSearchRequest.operation = MathOperationTypes::GREATER;
+rankingSearchRequest.format = FormatType::FASTA;
+p (rankingSearchRequest.request())
 ```
 
