@@ -25,7 +25,7 @@ https://dbaasp.org/api/v1?query=lookup&lookup_type=target_group&format=xml
 ```
 #### CURL
 ```
-Curl -  url -v -L -d "query=lookup&lookup_type=target_group&format=json" https://dbaasp.org/api/v1
+curl -v -L -d "query=lookup&lookup_type=target_group&format=json" https://dbaasp.org/api/v1
 ```
 
 
