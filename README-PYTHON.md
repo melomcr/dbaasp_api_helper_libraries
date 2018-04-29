@@ -14,7 +14,7 @@
 
 ```
 lookupRequest = LookupRequest()
-lookupRequest.lookupType = "medium";
+lookupRequest.lookupType = LookupType.MEDIUM;
 print (lookupRequest.request())
 
 ```
@@ -30,6 +30,7 @@ print (lookupRequest.request())
 ```
 peptideCardRequest = PeptideCardRequest()
 peptideCardRequest.peptide_id = 8;
+peptideCardRequest.format = FormatType.JSON;
 print (peptideCardRequest.request())
 
 ```
@@ -59,14 +60,13 @@ print (peptideCardRequest.request())
 | target_species_id | Identifier of target species |
 | nonstandard_experimental_conditions |  |
 | hemolytic_and_cytotoxic_activities |  |
-
 | format | xml,json,fasta |
 
 
 ```
 searchRequest = SearchRequest()
-searchRequest.synthesis_type = 36
-searchRequest.target_group_id = 790
+searchRequest.name = "a"
+searchRequest.format = FormatType.JSON;
 print (searchRequest.request())
 
 ```
@@ -95,7 +95,8 @@ rankingSearchRequest = RankingSearchRequest()
 rankingSearchRequest.target_species_id = 3232
 rankingSearchRequest.activity_measure_id = 72
 rankingSearchRequest.activity = 100;
-rankingSearchRequest.operation = ">";
+rankingSearchRequest.operation = MathOperationTypes.GREATER;
+rankingSearchRequest.format = FormatType.JSON;
 print (rankingSearchRequest.request())
 
 ```
