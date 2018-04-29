@@ -19,11 +19,11 @@
 | format | xml,json,tab |
 
 
-*GET*
+#### GET
 ```
 https://dbaasp.org/api/v1?query=lookup&lookup_type=target_group&format=xml
 ```
-*CURL* 
+#### CURL
 ```
 Curl -  url -v -L -d "query=lookup&lookup_type=target_group&format=json" https://dbaasp.org/api/v1
 ```
@@ -39,11 +39,11 @@ Curl -  url -v -L -d "query=lookup&lookup_type=target_group&format=json" https:/
 | format | xml,json,fasta |
 
 
-*GET*
+#### GET
 ```
 https://dbaasp.org/api/v1?query=peptide_card&peptide_id=107&format=json
 ```
-*CURL* 
+#### CURL
 ```
 curl -v -L -d "query=peptide_card&peptide_id=107&format=json" https://dbaasp.org/api/v1
 ```
@@ -76,11 +76,11 @@ curl -v -L -d "query=peptide_card&peptide_id=107&format=json" https://dbaasp.org
 | format | xml,json,fasta |
 
 
-*GET*
+#### GET
 ```
 https://dbaasp.org/api/v1?query=search&target_group_id=790&synthesis_type=36&format=xml
 ```
-*CURL* 
+#### CURL 
 ```
 curl -v -L -d "query=search&target_group_id=790&synthesis_type=36&format=xml" https://dbaasp.org/api/v1
 ```
@@ -106,11 +106,11 @@ curl -v -L -d "query=search&target_group_id=790&synthesis_type=36&format=xml" ht
 | format | xml,json,fasta |
 
 
-*GET*
+#### GET
 ```
 https://dbaasp.org/api/v1?query=ranking_search&target_species_id=3232&activity_measure_id=72&operation=<=&activity=0.5&format=json
 ```
-*CURL* 
+#### CURL 
 ```
 curl -v -L -d "query=ranking_search&target_species_id=3232&activity_measure_id=72&operation=<=&activity=0.5&format=json" https://dbaasp.org/api/v1
 ```
