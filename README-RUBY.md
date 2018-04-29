@@ -61,7 +61,6 @@
 | target_species_id | Identifier of target species |
 | nonstandard_experimental_conditions |  |
 | hemolytic_and_cytotoxic_activities |  |
-
 | format | xml,json,fasta |
 
 
