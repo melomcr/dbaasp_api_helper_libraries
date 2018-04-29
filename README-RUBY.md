@@ -13,9 +13,10 @@
 | format | xml,json,tab |
 
 ```
-lookupRequest = LookupRequest.new
-lookupRequest.lookupType = "medium";
-print (lookupRequest.request())
+ lookupRequest = LookupRequest.new
+ lookupRequest.lookupType = LookupType::KINGDOM;
+ lookupRequest.format = FormatType::XML;
+ p lookupRequest.request()
 
 ```
 
@@ -28,9 +29,10 @@ print (lookupRequest.request())
 
 
 ```
-peptideCardRequest = PeptideCardRequest.new
-peptideCardRequest.peptide_id = 8;
-print (peptideCardRequest.request())
+ peptideCardRequest = PeptideCardRequest.new
+ peptideCardRequest.peptide_id = 1
+ peptideCardRequest.format = FormatType::XML;
+ p (peptideCardRequest.request())
 
 ```
 
@@ -59,15 +61,14 @@ print (peptideCardRequest.request())
 | target_species_id | Identifier of target species |
 | nonstandard_experimental_conditions |  |
 | hemolytic_and_cytotoxic_activities |  |
-
 | format | xml,json,fasta |
 
 
 ```
-searchRequest = SearchRequest.new
-searchRequest.synthesis_type = 36
-searchRequest.target_group_id = 790
-print (searchRequest.request())
+ searchRequest = SearchRequest.new
+ searchRequest.name = "a"
+ searchRequest.format = FormatType::JSON;
+ p (searchRequest.request())
 
 ```
 
@@ -91,12 +92,13 @@ print (searchRequest.request())
 | format | xml,json,fasta |
 
 ```
-rankingSearchRequest = RankingSearchRequest.new
-rankingSearchRequest.target_species_id = 3232
-rankingSearchRequest.activity_measure_id = 72
-rankingSearchRequest.activity = 100;
-rankingSearchRequest.operation = ">";
-print (rankingSearchRequest.request())
+ rankingSearchRequest = RankingSearchRequest.new
+ rankingSearchRequest.target_species_id = 3232
+ rankingSearchRequest.activity_measure_id = 72
+ rankingSearchRequest.activity = 100;
+ rankingSearchRequest.operation = MathOperationTypes::GREATER;
+ rankingSearchRequest.format = FormatType::FASTA;
+ p (rankingSearchRequest.request())
 
 ```
 
