@@ -1,5 +1,5 @@
-import urllib
-
+from urllib.parse import urlencode, quote_plus
+from urllib.request import urlopen
 
 class AbstractRequest :
 
@@ -22,8 +22,11 @@ class AbstractRequest :
         for name in parameters:
             request_parameters[name]= parameters[name]
 
-        url_values = urllib.urlencode(request_parameters)
+        #url_values = urllib.urlencode(request_parameters)  # Py2.7
+        url_values = urlencode(request_parameters, quote_via=quote_plus)
         url = "https://dbaasp.org/api/v1";
 
-        contents = urllib.urlopen(url + "?" + url_values).read();
-        return contents;
+        #contents = urllib.urlopen(url + "?" + url_values).read()  # Py2.7
+        contents = urlopen(url + "?" + url_values).read()
+        
+        return contents

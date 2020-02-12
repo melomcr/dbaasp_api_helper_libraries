@@ -1,6 +1,8 @@
 
 # DBAASP API Helper Libraries
 
+## This fork was created to support Python 3 `urllib` changes.
+
 #### Please see documentations for following Programing languages
 
 * [Java](https://github.com/dbaasp/dbaasp_api_helper_libraries/blob/master/README-JAVA.md)
